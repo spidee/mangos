@@ -414,6 +414,7 @@ class ChatHandler
         bool HandleComeToMeCommand(const char *args);
         bool HandleCombatStopCommand(const char *args);
         bool HandleSendMessageCommand(const char * args);
+        bool HandleFlushArenaPointsCommand(const char *args);
         bool HandleRepairitemsCommand(const char* args);
         bool HandleWaterwalkCommand(const char* args);
 
@@ -428,6 +429,7 @@ class ChatHandler
         bool HandleSaveAllCommand(const char* args);
         bool HandleGetItemState(const char * args);
         bool HandleGetLootRecipient(const char * args);
+        bool HandleDebugArenaCommand(const char * args);
 
         Player*   getSelectedPlayer();
         Creature* getSelectedCreature();

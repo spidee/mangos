@@ -169,6 +169,7 @@ ChatCommand * ChatHandler::getCommandTable()
         { "Mod32Value",     SEC_ADMINISTRATOR,  false, &ChatHandler::HandleMod32Value,                 "", NULL },
         { "anim",           SEC_GAMEMASTER,     false, &ChatHandler::HandleAnimCommand,                "", NULL },
         { "lootrecipient",  SEC_GAMEMASTER,     false, &ChatHandler::HandleGetLootRecipient,           "", NULL },
+        { "arena",          SEC_ADMINISTRATOR,  false, &ChatHandler::HandleDebugArenaCommand,          "", NULL },
         { NULL,             0,                  false, NULL,                                           "", NULL }
     };
 
@@ -533,6 +534,7 @@ ChatCommand * ChatHandler::getCommandTable()
         { "damage",         SEC_ADMINISTRATOR,  false, &ChatHandler::HandleDamageCommand,              "", NULL },
         { "combatstop",     SEC_GAMEMASTER,     false, &ChatHandler::HandleCombatStopCommand,          "", NULL },
         { "chardelete",     SEC_CONSOLE,        true,  &ChatHandler::HandleCharacterDeleteCommand,     "", NULL },
+        { "flarenapoints",  SEC_ADMINISTRATOR,  false, &ChatHandler::HandleFlushArenaPointsCommand,    "", NULL },
         { "sendmessage",    SEC_ADMINISTRATOR,  true,  &ChatHandler::HandleSendMessageCommand,         "", NULL },
         { "repairitems",    SEC_GAMEMASTER,     false, &ChatHandler::HandleRepairitemsCommand,         "", NULL },
         { "waterwalk",      SEC_GAMEMASTER,     false, &ChatHandler::HandleWaterwalkCommand,           "", NULL },
