@@ -3,7 +3,7 @@ Arena patch TODO list
 DONE   |                           TASK
 ================================================================================
 [000%] | Put arena related data to arena_team_member table.
-[000%] | Rewrite player data field parsing to get arena data to use data in 
+[000%] | Rewrite player data field parsing to get arena data to use data in
        | arena_team_member.
 [000%] | Rewrite arena distribution method, now it is total mess.
 [000%] | Code optimizations
